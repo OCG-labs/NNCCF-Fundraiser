@@ -160,19 +160,24 @@ if(!class_exists('WDF_Gateway_eProcessing')) {
 					$post_data['RCRStartOnDay'] = date('m~d~Y');
 
 					switch ($_SESSION['wdf_recurring']) {
-					    case W:
+					    case 'W':
 					    	$post_data['RCRPeriod'] = 'Weekly';
 						    break;
 
-					    case M:
+					    case 'M':
 						    $post_data['RCRPeriod'] = 'Monthly';
 					        break;
 
-					    case 2:
+						case 'Q':
+							$post_data['RCRPeriod'] = '3Months';
+							break;
+
+					    case 'Y':
 						    $post_data['RCRPeriod'] = '12Months';
 					    	break;
 					}
 				}
+
 				else {
 					$post_data['txn_type'] = "one_time_donation";
 					if (isset($_POST['wdf_eventlevel_amounttype']) && $_POST['wdf_eventlevel_amounttype'] == 'per_person') {

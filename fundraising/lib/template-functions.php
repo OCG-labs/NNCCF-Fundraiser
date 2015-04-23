@@ -961,6 +961,7 @@ if(!function_exists('wdf_pledge_button')) {
                                      <option value="D">'.__('Daily','wdf').'</option>
                                      <option value="W">'.__('Weekly','wdf').'</option>
                                      <option value="M">'.__('Monthly','wdf').'</option>
+									 <option value="Q">'.__('Quarterly','wdf').'</option>
                                      <option value="Y">'.__('Yearly','wdf').'</option>
                                    </select>
                                  </div>';
@@ -977,6 +978,9 @@ if(!function_exists('wdf_pledge_button')) {
 			    			break;
 			    		case 'M':
 			    			$recurrance = 'a monthly';
+			    			break;
+						case 'Q':
+			    			$recurrance = 'a quarterly';
 			    			break;
 			    	    case 'Y':
 			    			$recurrance = 'an annual';
@@ -1124,6 +1128,7 @@ if(!function_exists('wdf_eproc_pledge_button')) {
                                       <option value="D">'.__('Daily','wdf').'</option>
                                       <option value="W">'.__('Weekly','wdf').'</option>
                                       <option value="M">'.__('Monthly','wdf').'</option>
+									  <option value="Q">'.__('Quarterly','wdf').'</option>
                                       <option value="Y">'.__('Yearly','wdf').'</option>
                                     </select>';
 				}
@@ -1139,6 +1144,9 @@ if(!function_exists('wdf_eproc_pledge_button')) {
 							break;
 						case 'M':
 							$recurrance = 'monthly';
+							break;
+						case 'Q':
+							$recurrance = 'quarterly';
 							break;
 						case 'Y':
 							$recurrance = 'annually';

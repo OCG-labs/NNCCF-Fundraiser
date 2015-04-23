@@ -342,6 +342,7 @@ if($pagenow == 'nav-menus.php') { ?>
                         <option value="D" <?php (isset($meta['wdf_fixed_recurrance'][0]) ? selected($meta['wdf_fixed_recurrance'][0],'D') : ''); ?>><?php _e('Daily','wdf'); ?></option>
                         <option value="W" <?php (isset($meta['wdf_fixed_recurrance'][0]) ? selected($meta['wdf_fixed_recurrance'][0],'W') : ''); ?>><?php _e('Weekly','wdf'); ?></option>
                         <option value="M" <?php (isset($meta['wdf_fixed_recurrance'][0]) ? selected($meta['wdf_fixed_recurrance'][0],'M') : ''); ?>><?php _e('Monthly','wdf'); ?></option>
+						<option value="Q" <?php (isset($meta['wdf_fixed_recurrance'][0]) ? selected($meta['wdf_fixed_recurrance'][0],'Q') : ''); ?>><?php _e('Quarterly','wdf'); ?></option>
                         <option value="Y" <?php (isset($meta['wdf_fixed_recurrance'][0]) ? selected($meta['wdf_fixed_recurrance'][0],'Y') : ''); ?>><?php _e('Yearly','wdf'); ?></option>
                        </select>
                     </label>
